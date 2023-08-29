@@ -104,12 +104,14 @@ const Row2 = () => {
               yAxisId={'left'}
               type="monotone"
               dataKey="Non Operational Expenses"
+              // @ts-ignore
               stroke={palette.tertiary[500]}
             />
             <Line
               yAxisId={'right'}
               type="monotone"
               dataKey="Operational Expenses"
+              // @ts-ignore
               stroke={palette.tertiary[500]}
             />
           </LineChart>
@@ -136,6 +138,7 @@ const Row2 = () => {
               paddingAngle={2}
               dataKey="value"
             >
+              {/* @ts-ignore */}
               {pieData.map((entry, index) => (
                 <Cell key={`cell-${index}`} fill={pieColors[index]} />
               ))}
@@ -198,6 +201,7 @@ const Row2 = () => {
             <Scatter
               name="A school"
               data={productExpenseData}
+              // @ts-ignore
               fill={palette.tertiary[500]}
             />
           </ScatterChart>

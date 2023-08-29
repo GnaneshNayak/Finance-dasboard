@@ -98,6 +98,7 @@ const Preductions = () => {
           <Line
             type="monotone"
             dataKey="Actual Revenue"
+            // @ts-ignore
             stroke={palette.primary.main}
             strokeWidth={0}
             dot={{ strokeWidth: 5 }}

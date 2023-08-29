@@ -168,6 +168,7 @@ const Row3 = () => {
                   paddingAngle={2}
                   dataKey="value"
                 >
+                  {/*  @ts-ignore */}
                   {data.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={pieColors[index]} />
                   ))}

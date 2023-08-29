@@ -119,6 +119,7 @@ const Row1 = () => {
             <Area
               type="monotone"
               dataKey="revenue"
+              // @ts-ignore
               stroke={palette.primary.main}
               fillOpacity={1}
               fill="url(#colorRevenue)"
@@ -127,6 +128,7 @@ const Row1 = () => {
             <Area
               type="monotone"
               dataKey="expenses"
+              // @ts-ignore
               stroke={palette.primary.main}
               fillOpacity={1}
               fill="url(#colorExpenses)"
@@ -184,12 +186,14 @@ const Row1 = () => {
               yAxisId={'left'}
               type="monotone"
               dataKey="profit"
+              // @ts-ignore
               stroke={palette.tertiary[500]}
             />
             <Line
               yAxisId={'right'}
               type="monotone"
               dataKey="revenue"
+              // @ts-ignore
               stroke={palette.tertiary[500]}
             />
           </LineChart>
